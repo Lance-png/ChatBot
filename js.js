@@ -3,15 +3,21 @@ var print=document.querySelector("#ans");
 var button=document.querySelector("#click");
 button.addEventListener("click", function (element) {
  
-    switch(ask.value) {
-        case "tea":
-            print.innerHTML=("Tea? go make yourself tea then");
+    switch(ask.value.toUpperCase()) {
+        case "TEA":
+            print.innerHTML=("Tea coming up.");
         break;
-        case "coffee":
-            print.innerHTML=("Coffee? go make yourself coffee then");
+        case "COFFEE":
+            print.innerHTML=("Coffee coming up.");
             break;
+        case "WATER":
+            print.innerHTML=("Water? Great choice")
+            break;
+            case "RELATIONSHIP":
+                    print.innerHTML=("We're just friends")
+                    break;
         default:
-            print.innerHTML=("Enter tea or coffee");
+            print.innerHTML=("Sorry, but we dont serve "+ask.value+".");
             break;
     
     }
