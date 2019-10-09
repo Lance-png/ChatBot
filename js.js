@@ -13,9 +13,6 @@ button.addEventListener("click", function (element) {
         case "WATER":
             print.innerHTML=("Water? Great choice")
             break;
-            case "RELATIONSHIP":
-                    print.innerHTML=("We're just friends")
-                    break;
         default:
             print.innerHTML=("Sorry, but we dont serve "+ask.value+".");
             break;
